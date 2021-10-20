@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method = "POST" action = "/")
+    label(for = "userText") Enter your text here:
+    br
+    input(type = "text" id = "userText" name = "userText" value = `${phrase}`)
+    br
+    button(type = "submit") Submit
+  if message
+    p=message
+
+  br
+  br
+  br
+  p(style = "font-size: 24px; font-weight: bold" ) Palindrome Examples
+  p racecar
+  p No lemon, no melon
+  p kayak a level,level a kayak
